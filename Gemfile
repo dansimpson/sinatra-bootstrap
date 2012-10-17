@@ -1,6 +1,19 @@
-# A sample Gemfile
 source "http://rubygems.org"
 
-gem "sinatra"
+gem "rake"
+
 gem "haml"
-gem "sinatra-contrib"
+gem "sass"
+gem "coffee-script"
+gem "uglifier"
+
+gem "sinatra"
+gem "sinatra-assetpack", :require => "sinatra/assetpack"
+gem "sinatra-contrib", :require => "sinatra/contrib/all"
+
+group :test do
+  gem "minitest"
+  gem "rack-test"
+  gem "capybara"
+  gem "capybara_minitest_spec"
+end

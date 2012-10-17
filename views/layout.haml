@@ -1,2 +1,12 @@
-#monkey
+!!!
+
+%head
+  %title Sinatra Bootstrap
+  %meta(charset="utf-8")
+  = css :application, :media => "screen"
+
+%body
   = yield
+
+  = js :application
+  = yield_content :scripts
